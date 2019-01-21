@@ -13,7 +13,12 @@ def assign_rooms(array)
 end
 
 def printer(array) 
-
+  batch_badge_creator(array).each do |item|
+    puts item 
+  end
+  assign_rooms.each_with_index do |item, index|
+    puts index 
+  end
 end
 
     
